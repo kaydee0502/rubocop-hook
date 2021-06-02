@@ -14,17 +14,24 @@
     - Copy this in the `pre-commit` file
 
     ```shell
-   #!/usr/bin/env bash
+  #!/usr/bin/env bash
 
     set -e
 
     cd "${0%/*}/../.."
 
     echo "Running rubocop on your changes"
+
+
     # for modified files
-    git diff --name-only | xargs rubocop
+    if [[ $(git diff --name-only) ]]; then
+        git diff --name-only | xargs rubocop
+    fi
+
     # for staged files
-    git diff --name-only --cached | xargs rubocop
+    if [[ $(git diff --name-only --cached) ]]; then
+        git diff --name-only --cached | xargs rubocop
+    fi
 
     ```
 
