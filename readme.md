@@ -1,6 +1,6 @@
 # Installing rubocop pre-commit hook!
 
-### Navigate to project directory (more formally navigate to location where your .git is.)
+> Navigate to project directory (more formally navigate to location where your .git is.)
 
 
 + Intall rubocop:
