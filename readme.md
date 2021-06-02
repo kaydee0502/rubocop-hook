@@ -7,7 +7,7 @@
     - Add `gem 'rubocop', '~> 1.16', require: false` to your Gemfile.
     - Run `bundle install` while in `devsnest` directory.
 
-> Navigate back to `backend` directory.
+> #### Navigate back to `backend` directory.
 
 + Add pre-commit hook:
     - Create new file `pre-commit` in `.git/hooks` directory. Simply put, you can use `vi ./.git/hooks/pre-commit`.
@@ -40,7 +40,7 @@
 
 
 
-#### Now rubocop will run with every commit for your staged changes.
+#### Now rubocop will run with every commit for your changes.
 
 
 
