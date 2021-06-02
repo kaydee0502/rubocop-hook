@@ -18,10 +18,11 @@
 
     set -e
 
-    cd "${0%/*}/../../devsnest"
+    cd "${0%/*}/../.."
 
-    echo "Running rubocop"
-    bundle exec rubocop
+    echo "Running rubocop on your changes"
+    git diff --name-only | xargs rubocop
+
     ```
 
     - Run `chmod +x ./.git/hooks/pre-commit` to make it executable.
