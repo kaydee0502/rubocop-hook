@@ -22,9 +22,6 @@
 
     echo "Running rubocop"
     bundle exec rubocop
-
-
-
     ```
 
     - Run `chmod +x ./.git/hooks/pre-commit` to make it executable.
