@@ -14,9 +14,7 @@
     - Copy this in the `pre-commit` file
 
     ```shell
-  #!/usr/bin/env bash
-
-    set -e
+  set -e
 
     cd "${0%/*}/../.."
 
@@ -25,14 +23,14 @@
 
     # for modified files
     if [[ $(git diff --name-only) ]]; then
-        git diff --name-only | xargs rubocop
+        git diff --diff-filter=AM --name-only | xargs rubocop
     fi
 
     # for staged files
     if [[ $(git diff --name-only --cached) ]]; then
-        git diff --name-only --cached | xargs rubocop
+        git diff --diff-filter=AM --name-only --cached | xargs rubocop
     fi
-
+    
     ```
 
     - Run `chmod +x ./.git/hooks/pre-commit` to make it executable.
