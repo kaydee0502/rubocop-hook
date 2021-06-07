@@ -40,5 +40,6 @@
 
 #### Now rubocop will run with every commit for your changes.
 
+> Note : to bypass rubocup checks use `-n` or `--no-verify` with `git commit`.
 
 
