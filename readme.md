@@ -14,7 +14,9 @@
     - Copy this in the `pre-commit` file
 
     ```shell
-  set -e
+  #!/usr/bin/env bash
+
+    set -e
 
     cd "${0%/*}/../.."
 
