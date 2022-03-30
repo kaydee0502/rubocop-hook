@@ -9,7 +9,7 @@
 
 + Add pre-commit hook:
     - Create new file `pre-commit` in `.git/hooks` directory. Simply put, you can use `vi ./.git/hooks/pre-commit`.
-    - Copy this in the `pre-commit` file
+    - Paste this script in the `pre-commit` file
 
     ```shell
   #!/usr/bin/env bash
