@@ -16,8 +16,6 @@
 
     set -e
 
-    cd "${0%/*}/../.."
-
     echo "Running rubocop on your changes"
 
 
