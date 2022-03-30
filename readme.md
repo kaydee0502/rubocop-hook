@@ -23,12 +23,12 @@
 
     # for modified files
     if [[ $(git diff --name-only) ]]; then
-        git diff --diff-filter=AM --name-only | xargs rubocop
+        git diff --diff-filter=AM --name-only | xargs rubocop -A
     fi
 
     # for staged files
     if [[ $(git diff --name-only --cached) ]]; then
-        git diff --diff-filter=AM --name-only --cached | xargs rubocop
+        git diff --diff-filter=AM --name-only --cached | xargs rubocop -A
     fi
     
     ```
