@@ -4,7 +4,7 @@
 
 
 + Intall rubocop:
-    - Add `gem 'rubocop', '~> 1.16', require: false` to your Gemfile.
+    - Add `gem 'rubocop', require: false` to your Gemfile.
     - Run `bundle install` while in `project` directory.
 
 + Add pre-commit hook:
