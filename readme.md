@@ -7,8 +7,6 @@
     - Add `gem 'rubocop', '~> 1.16', require: false` to your Gemfile.
     - Run `bundle install` while in `project` directory.
 
-> #### Navigate back to `backend` directory.
-
 + Add pre-commit hook:
     - Create new file `pre-commit` in `.git/hooks` directory. Simply put, you can use `vi ./.git/hooks/pre-commit`.
     - Copy this in the `pre-commit` file
