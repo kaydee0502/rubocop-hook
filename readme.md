@@ -5,7 +5,7 @@
 
 + Intall rubocop:
     - Add `gem 'rubocop', '~> 1.16', require: false` to your Gemfile.
-    - Run `bundle install` while in `devsnest` directory.
+    - Run `bundle install` while in `project` directory.
 
 > #### Navigate back to `backend` directory.
 
